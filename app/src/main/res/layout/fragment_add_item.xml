@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/teal_700"
+        >
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:padding="10dp"
+            tools:text="title"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_des"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@id/card_title"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/teal_700"
+        >
+
+        <EditText
+            android:id="@+id/et_des"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|top"
+            android:padding="15dp"
+            tools:text="Des"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_baseline_save_alt_24"
+        android:backgroundTint="@color/green"
+        />
+
+
+
+
+</RelativeLayout>

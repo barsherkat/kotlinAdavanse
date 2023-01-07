@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/room_live_data"
+    app:startDestination="@id/fragmentAllItem">
+
+    <fragment
+        android:id="@+id/fragmentAllItem"
+        android:name="com.example.viewbinding.livedata.room.fragments.FragmentAllItem"
+        android:label="fragment_all_item"
+        tools:layout="@layout/fragment_all_item" >
+        <action
+            android:id="@+id/action_fragmentAllItem_to_fragmentAddItem"
+            app:destination="@id/fragmentAddItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddItem"
+        android:name="com.example.viewbinding.livedata.room.fragments.FragmentAddItem"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" />
+</navigation>
